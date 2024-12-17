@@ -11,7 +11,7 @@ jobs:
     - name: Git configuration
       run: git config --global user.name "Test bot"
     - name: Download IOCs
-      run: curl -L --insecure -o ioc.csv --request GET https://optic.threatstream.com/api/v1/integration/21590/latest/?token=${{ secrets.TOKEN }}
+      #run: curl -L --insecure -o ioc.csv --request GET https://optic.threatstream.com/api/v1/integration/21590/latest/?token=${{ secrets.TOKEN }}
     - name: Display structure of downloaded files
       run: ls -R
     - name: Commit
